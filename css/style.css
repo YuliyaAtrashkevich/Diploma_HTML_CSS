@@ -139,7 +139,7 @@ header::after {
 }
 
 .art1 {
-  background-image: url(/img/trend1.jpg);
+  background-image: url(../img/trend1.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -148,7 +148,7 @@ header::after {
 }
 
 .art2 {
-  background-image: url(/img/trend2.jpg);
+  background-image: url(../img/trend2.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -157,7 +157,7 @@ header::after {
 }
 
 .art3 {
-  background-image: url(/img/trend3.jpg);
+  background-image: url(../img/trend3.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -166,7 +166,7 @@ header::after {
 }
 
 .art4 {
-  background-image: url(/img/trend4.jpg);
+  background-image: url(../img/trend4.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
