@@ -21,7 +21,6 @@ header {
   background-position: center center;
   background-size: cover;
   width: 100%;
-  min-width: 1200px;
   min-height: 450px;
   position: relative;
   z-index: 0;
@@ -44,11 +43,10 @@ header::after {
   display: flex;
   justify-content: space-between;
   position: relative;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 250px;
+  margin-right: 250px;
   z-index: 2;
 }
 
@@ -79,8 +77,8 @@ header::after {
 .header__title {
   position: relative;
   z-index: 2;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 250px;
+  margin-right: 250px;
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -233,10 +231,9 @@ header::after {
 .main {
   display: flex;
   justify-content: center;
-  width: 60%;
   margin-top: 65px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 250px;
+  margin-right: 250px;
 }
 
 
@@ -363,11 +360,13 @@ time {
 
 .aside__search {
   display: flex;
+  justify-content: space-between;
   margin-bottom: 60px;
 }
 
 .aside__search input {
   height: 50px;
+  width: 90%;
   border: none;
   background-color: #f4f7f6;
   font-family: "Open Sans Regular";
@@ -376,7 +375,8 @@ time {
 }
 
 .aside__search button {
-  width: 50px;
+  width: 10%;
+  min-width: 50px;
   background-color: #b59f5b;
   border: none;
   cursor: pointer;
@@ -482,26 +482,20 @@ time {
 
 .shop {
   margin-bottom: 60px;
+  margin-left: 250px;
+  margin-right: 250px;
 }
 
 .shop__cards {
   display: flex;
-  justify-content: space-between;
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: center;
 }
 
 .shop__cards article {
   width: 33.3%;
-  min-width: 300px;
   display: flex;
   flex-direction: column;
   padding: 0 15px;
-}
-
-.shop__cards img {
-  width: 100%;
 }
 
 .shop__cards article:nth-child(n + 2) {
@@ -511,7 +505,6 @@ time {
 .shop__description {
   display: flex;
   flex-direction: column;
-  height: 66%;
 }
 
 .container {
@@ -521,7 +514,6 @@ time {
 }
 
 .shop__description h3 {
-  width: 100%;
   text-transform: uppercase;
   font-family: "Open Sans";
   font-size: 20px;
@@ -580,17 +572,17 @@ time {
   text-decoration: none;
 }
 
-.footer {
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 250px;
+  margin-right: 250px;
 }
 
 .footer__icons {
   background-color: #f4f7f6;
   padding: 30px 0;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .footer__icons ul {
@@ -648,36 +640,6 @@ time {
   text-decoration: none;
 }
 
-/*.footer__icons a {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  clip: rect(1px, 1px, 1px, 1px);
-}
-
-/*
-
-.socials-link-text {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  clip: rect(1px, 1px, 1px, 1px);
-}
-
-.copyright {
-  text-align: center;
-  margin-top: 75px;
-  font-family: Open Sans;
-  font-size: 12px;
-  font-weight: 100;
-  color: #999999;
-  text-decoration: none;
-}
-
-/*
-
-
-
 
 /* body::after {
   content: "";
@@ -689,14 +651,14 @@ time {
   background-color: #000000;
   opacity: 0.6;
   z-index: 2;
-} */
+} 
 
 .popup_hidden {
   display: none;
   width: 390px;
   min-height: 590px;
   background-color: #ffffff;
-/*  display: flex; */
+  display: flex;
   flex-direction: column;
   overflow: auto;
   position: fixed;
@@ -857,8 +819,7 @@ time {
   margin-right: auto;
 } */
 
-
-
+/*
 @media (min-width: 641px) and (max-width: 1199px) {
   .menu {
     display: none;
