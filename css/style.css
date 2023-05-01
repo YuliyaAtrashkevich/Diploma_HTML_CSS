@@ -231,16 +231,17 @@ header::after {
 .main {
   display: flex;
   justify-content: center;
+  width: 80%;
+  max-width: 1170px;
   margin-top: 65px;
-  margin-left: 250px;
-  margin-right: 250px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
 .main__articles {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   width: 70%;
   margin-right: 60px;
 }
@@ -253,15 +254,23 @@ aside {
 
 .main__article {
   display: flex;
+  justify-content: space-between;
   margin-bottom: 40px;
 }
 
-/* Разобраться c размерами картинки - не тянется*/
-
-.main__article img {
+.main__img {
+  display: flex;
   margin-right: 40px;
-  width: 50%;
   background-color: #f4f7f6;
+  width: 50%;
+  max-width: 380px;
+}
+
+.main__img img {
+  width: 100%;
+  float: left;
+  /*height: auto;*/
+  object-fit: cover;
 }
 
 .main__decription {
@@ -275,9 +284,9 @@ aside {
   text-align: left;
   font-family: "Open Sans";
   font-weight: 800;
-  font-size: 20px;
+  font-size: 1.25em;
   line-height: 1.2;
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
 }
 
 .main__title a {
@@ -340,9 +349,16 @@ time {
   margin-bottom: 25px;
 }
 
-.aside__new-post img {
-  margin-right: 25px;
+.aside__img {
+  display: flex;
   width: 24%;
+  margin-right: 25px;
+}
+
+.aside__img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .aside__description {
@@ -480,32 +496,40 @@ time {
   margin-left: 5px;
 }
 
+/* Сделать картинки через тег picture для разных устройств*/
+
 .shop {
   margin-bottom: 60px;
-  margin-left: 250px;
-  margin-right: 250px;
+  width: 80%;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .shop__cards {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .shop__cards article {
-  width: 33.3%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   padding: 0 15px;
 }
 
 .shop__cards article:nth-child(n + 2) {
-  margin-left: 65px;
+  margin-left: 45px;
 }
 
 .shop__description {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
+
+/* Выровнять рамку по нижнему краю*/
 
 .container {
   border: 3px solid #8a701f;
@@ -572,12 +596,16 @@ time {
   text-decoration: none;
 }
 
-footer {
+.footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 250px;
-  margin-right: 250px;
+  min-width: 700px;
+  width: 80%;
+  max-width: 1170px;
+  margin-top: 65px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer__icons {
