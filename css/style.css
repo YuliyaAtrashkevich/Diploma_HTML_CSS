@@ -5,6 +5,10 @@
   box-sizing: border-box; 
 }
 
+html {
+  font-size: 16px;
+}
+
 @font-face {
   font-family: "Open Sans Regular";
   src: url(../fonts/OpenSans-Regular.woff);
@@ -258,20 +262,16 @@ aside {
   margin-bottom: 40px;
 }
 
-.main__img {
-  display: flex;
-  margin-right: 40px;
-  background-color: #f4f7f6;
+
+.main__article img {
+  display: block;
   width: 50%;
   max-width: 380px;
+  margin-right: 40px;
+  object-fit: cover;
+  background-color: #f4f7f6;
 }
 
-.main__img img {
-  width: 100%;
-  float: left;
-  /*height: auto;*/
-  object-fit: cover;
-}
 
 .main__decription {
   display: flex;
@@ -349,20 +349,16 @@ time {
   margin-bottom: 25px;
 }
 
-.aside__img {
-  display: flex;
-  width: 24%;
-  margin-right: 25px;
-}
-
-.aside__img img {
-  width: 100%;
-  height: auto;
+.aside__new-post img {
+  display: block;
+  width: 25%;
+  height: 100%;
   object-fit: cover;
+  margin-right: 40px;
 }
 
 .aside__description {
-  width: 76%;
+  width: 75%;
 }
 
 .aside__description a {
@@ -512,6 +508,11 @@ time {
   width: 100%;
 }
 
+.shop__cards img {
+  width: 100%;
+  object-fit: cover;
+}
+
 .shop__cards article {
   width: 30%;
   display: flex;
@@ -526,7 +527,7 @@ time {
 .shop__description {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 /* Выровнять рамку по нижнему краю*/
@@ -535,6 +536,7 @@ time {
   border: 3px solid #8a701f;
   margin: -30px -20px;
   padding: 30px 30px;
+  height: 100%;
 }
 
 .shop__description h3 {
@@ -668,6 +670,12 @@ time {
   text-decoration: none;
 }
 
+@media (min-width: 1200px) and (max-width: 1390px) {
+  html {
+    font-size: 14px;
+  }
+  
+}
 
 /* body::after {
   content: "";
@@ -929,3 +937,4 @@ time {
   }
 
 }
+
