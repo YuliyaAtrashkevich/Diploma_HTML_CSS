@@ -193,7 +193,7 @@ header::after {
   text-align: left;
   font-family: "Open Sans";
   font-weight: 800;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.2;
 }
 
@@ -218,7 +218,7 @@ header::after {
   color: #b59f5b;
   text-transform: uppercase;
   font-family: "Open Sans";
-  font-size: 14px;
+  font-size: 0.875rem;
   text-decoration-line: none;
 }
 
@@ -284,9 +284,9 @@ aside {
   text-align: left;
   font-family: "Open Sans";
   font-weight: 800;
-  font-size: 1.25em;
+  font-size: 1.25rem;
   line-height: 1.2;
-  margin-bottom: 1.25em;
+  margin-bottom: 1.25rem;
 }
 
 .main__title a {
@@ -296,7 +296,7 @@ aside {
 
 .main__date-author {
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
 time {
@@ -316,7 +316,7 @@ time {
 .main__decription p {
   color: #000000;
   font-family: "Open Sans Regular";
-  font-size: 15px;
+  font-size: 0.94rem;
   line-height: 1.6; 
 }
 
@@ -345,7 +345,6 @@ time {
 
 .aside__new-post {
   display: flex;
-  justify-content: space-between;
   margin-bottom: 25px;
 }
 
@@ -354,7 +353,7 @@ time {
   width: 25%;
   height: 100%;
   object-fit: cover;
-  margin-right: 40px;
+  margin-right: 2.5rem;
 }
 
 .aside__description {
@@ -363,7 +362,7 @@ time {
 
 .aside__description a {
   font-family: "Open Sans";
-  font-size: 14px;
+  font-size: 0.875rem;
   text-transform: uppercase;
   text-decoration: none;
   color: #0f0d0e;
@@ -492,8 +491,6 @@ time {
   margin-left: 5px;
 }
 
-/* Сделать картинки через тег picture для разных устройств*/
-
 .shop {
   margin-bottom: 60px;
   width: 80%;
@@ -530,8 +527,6 @@ time {
   justify-content: flex-start;
 }
 
-/* Выровнять рамку по нижнему краю*/
-
 .container {
   border: 3px solid #8a701f;
   margin: -30px -20px;
@@ -542,10 +537,10 @@ time {
 .shop__description h3 {
   text-transform: uppercase;
   font-family: "Open Sans";
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 900;
-  margin-top: 20px;
-  margin-bottom: 15px;
+  margin-top: 1.25rem;
+  margin-bottom: 0.9rem;
 }
 
 .title a {
@@ -554,9 +549,9 @@ time {
 }
 
 .shop__description p {
-  margin-bottom: 25px;
+  margin-bottom: 1.56rem;
   font-family: "Open Sans Regular";
-  font-size: 15px;
+  font-size: 0.9rem;
   font-weight: normal;
   color: #0f0d0e;
   display: inline;
@@ -674,7 +669,20 @@ time {
   html {
     font-size: 14px;
   }
-  
+  .aside__description a {
+    font-size: 0.8rem;
+    line-height: 0.9;
+  }
+  .main__date-author {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+  .aside__new-post img {
+    margin-right: 2rem;
+  }
+  .shop__description p {
+    line-height: 1.5rem;
+  }
 }
 
 /* body::after {
