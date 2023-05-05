@@ -19,6 +19,8 @@ html {
   src: url(../fonts/OpenSans-Bold.woff);
 }
 
+/* Хэдер */
+
 header {
   background-image: url(../img/banner-bg.jpg);
   background-repeat: no-repeat;
@@ -93,6 +95,8 @@ header::after {
   font-size: 2.8rem;
   line-height: 1.5;
 }
+
+/* Тренды */
 
 .trends {
   width: 100%;
@@ -234,6 +238,8 @@ header::after {
   padding: 30px 16px 16px 16px;
 }
 
+/* Основная секция */
+
 .main {
   display: flex;
   justify-content: center;
@@ -329,6 +335,8 @@ time {
   font-size: 0.94rem;
   line-height: 1.6;
 }
+
+/* Боковая секция */
 
 .aside h2 {
   text-align: center;
@@ -501,6 +509,7 @@ time {
   margin-left: 5px;
 }
 
+/* Секция магазина */
 .shop {
   margin-bottom: 60px;
   width: 80%;
@@ -727,6 +736,7 @@ time {
   .header__nav ul {
     display: none;
   }
+
   .header__menu {
     display: flex;
     justify-content: space-between;
@@ -794,84 +804,188 @@ time {
   .trends {
     margin: 40px 0 60px 0;
   }
-  
+
   .trends__articles {
     flex-wrap: wrap;
     width: 100%;
   }
-  
+
   .trends__article {
     width: calc(100% / 2 - 2px);
     padding: 280px 16px 16px 16px;
     margin: 0 2px 4px 0;
   }
+
   .trends__article:nth-child(2n + 2) {
     margin-right: 0;
   }
 
-    .main {
-      min-width: calc(100% - 60px);
-      margin: 65px 30px 20px 30px;
-    }
-        
-    .main__articles {
-      width: 60%;
-      margin-right: 30px;
-    }
-    
-    aside {
-      width: 40%;
-    }
-    
-    .main__article {
-      flex-direction: column;
-      margin-bottom: 64px;
-      padding-bottom: 16px;
-      border-bottom: #eee 2.5px solid;
-    }
+  .main {
+    min-width: calc(100% - 60px);
+    margin: 65px 30px 20px 30px;
+  }
 
-    .main__article:last-child {
-      border-bottom: none;
-    }
-       
-    .main__img {
-      width: 100%;
-      padding: 0 0 76% 0;
-      margin-bottom: 16px;
-    }
-    
-    .main__decription {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
+  .main__articles {
+    width: 60%;
+    margin-right: 30px;
+  }
 
-    .main__decription h2 {
-      font-size: 1.1rem;
-      margin-bottom: 2.5rem;
-    }
-   
-    .aside__new-post {
-      margin-bottom: 20px;
-    }
-       
-    .aside__description a {
-      font-size: 0.8rem;
-      line-height: 1.1;
-    }
+  aside {
+    width: 40%;
+  }
+
+  .main__article {
+    flex-direction: column;
+    margin-bottom: 64px;
+    padding-bottom: 16px;
+    border-bottom: #eee 2.5px solid;
+  }
+
+  .main__article:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+
+  .main__img {
+    width: 100%;
+    padding: 0 0 76% 0;
+    margin-bottom: 16px;
+  }
+
+  .main__decription {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .main__decription h2 {
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .aside__new-post {
+    margin-bottom: 20px;
+  }
+
+  .aside__description a {
+    font-size: 0.8rem;
+    line-height: 1.1;
+  }
+
+  /* Лишнее удалить */
+
+  .shop {
+    min-width: calc(100% - 60px);
+    margin: 0px 30px 20px 30px;
+  }
+
+  .shop__cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;    
+  }
+
+  .shop__cards article {
+    width: calc(100% / 2 - 30px);
+    margin-bottom: 60px;
+  }
+
+  .shop__cards article:nth-child(n + 2) {
+    margin-left: 0;
+  }
+
+  .shop__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .container {
+    border: 3px solid #8a701f;
+    margin: -30px -20px;
+    padding: 30px 30px;
+    height: 100%;
+  }
+
+  .shop__description h3 {
+    text-transform: uppercase;
+    font-family: "Open Sans";
+    font-size: 1.25rem;
+    font-weight: 900;
+    margin-top: 1.25rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .title a {
+    color: #0f0d0e;
+    text-decoration-line: none;
+  }
+
+  .shop__description p {
+    margin-bottom: 1.56rem;
+    font-family: "Open Sans Regular";
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: #0f0d0e;
+    display: inline;
+  }
+
+  .text a {
+    color: #8a701f;
+    text-decoration-line: none;
+    display: inline;
+  }
+
+  .shop__buy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .shop__buy span {
+    color: #0f0d0e;
+    text-transform: uppercase;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+  .shop__button {
+    text-transform: uppercase;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 800;
+    border: none;
+    background-color: #b59f5b;
+    padding: 10px 15px;
+    text-align: center;
+  }
+
+  .shop__button a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
 }
+
 
 @media (min-width: 641px) and (max-width: 836px) {
   html {
     font-size: 14px;
   }
+
   .main__article {
     margin-bottom: 50px;
   }
+
   .main__decription h2 {
     margin-bottom: 1.5rem;
   }
-  .aside__new-posts, .aside__search, .aside__mailing, .aside__tags {
+
+  .aside__new-posts,
+  .aside__search,
+  .aside__mailing,
+  .aside__tags {
     margin-bottom: 40px;
   }
 }
