@@ -414,6 +414,16 @@ time {
   cursor: pointer;
 }
 
+.aside__search button:hover, .aside__mailing button:hover, .shop__button:hover {
+  box-shadow: 2px 3px 4px #999999;
+  transition: box-shadow 0.3s ease-out;
+}
+
+.aside__search button:active, .aside__mailing button:active, .shop__button:active {
+  background-color: #8a763b;
+  transition: background-color 0.1s ease-in;
+}
+
 .aside__search img {
   width: 20px;
 }
@@ -691,7 +701,7 @@ time {
 
 /* Поп-ап */
 
-body::after {
+/*body::after {
   content: "";
   position: fixed;
   top: 0;
@@ -785,7 +795,6 @@ body::after {
   margin-bottom: 12px;
 }
 
-/* Исправить радиокнопки*/
 .radio div {
   display: flex;
   flex-direction: row;
