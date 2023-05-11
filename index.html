@@ -360,12 +360,12 @@
         </select>
       </div>
       <div class="popup__group radio">
-        <label for="subscribe-status">Вы подписаны на e-mail рассылку?</label>
+        <span>Вы подписаны на e-mail рассылку?</span>
         <div>
-          <input type="radio" name="subscribe-status" id="subscribe-status">
-          <span>Да</span>
-          <input type="radio" name="subscribe-status" id="subscribe-status" checked>
-          <span>Нет</span>
+            <input type="radio" name="subscribe-status" value="yes" id="subscribe-status" class="popup__radio_default">
+            <label for="subscribe-status"><span class="popup__radio_custom"></span>Да</label>
+            <input type="radio" name="subscribe-status" value="no" id="subscribe-status" class="popup__radio_default" checked>
+            <label for="subscribe-status"><span class="popup__radio_custom"></span>Нет</label>
         </div>
       </div>
       <div class="popup__group">

@@ -767,34 +767,58 @@ body::after {
 .popup__group span {
   font-family: 'Open Sans Regular';
   font-size: 0.8rem;
-  padding: 0 8px;
-  margin-right: 12px;
+  padding: 0 4px;
+  margin-bottom: 12px;
 }
+
 
 .radio div {
   display: flex;
   flex-direction: row;
   align-items: center;
+  position: relative;
 }
 
-/* Разобраться со стилизацией радиокнопок
-.radio input::before {
+.radio input {
+
+}
+
+.radio label {
+  margin-right: 30px;
+}
+
+.popup__group input, .popup__radio_custom {
+  margin-right: 20px;
+}
+
+.popup__radio_custom::before {
+  position: absolute;
+  display: inline-block;
   content: "";
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   background-image: url("../svg/form-empty-circle.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 15px;
-  vertical-align: middle;
-  margin-right: 5px;
+  cursor: pointer;
 }
 
-.radio input:checked~.radio input::before {
+.popup__radio_default:checked + label > .popup__radio_custom::before {
   background-image: url("../svg/form-circle.svg");
 }
 
-*/
+/*.popup__radio_default {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  /*clip: rect(1px, 1px, 1px, 1px);
+  height: 1px; 
+  width: 1px; 
+  cursor: pointer;
+  z-index: 100;
+}*/
 
 .popup__group textarea {
   min-width: 100%;
@@ -827,9 +851,6 @@ body::after {
 }
 
 /*
-
-
-
 .select {
   background-image: url("../svg/form-arrows.svg");
   background-repeat: no-repeat;
