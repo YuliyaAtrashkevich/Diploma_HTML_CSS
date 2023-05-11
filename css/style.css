@@ -764,6 +764,20 @@ body::after {
   background-color: #f4f7f6;
 }
 
+.popup__group select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("../svg/form-arrows.svg");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    background-size: 10px;
+}
+
+.popup__group select:focus {
+  border-bottom: #b59f5b 1px solid;
+  outline: none;
+}
+
 .popup__group span {
   font-family: 'Open Sans Regular';
   font-size: 0.8rem;
@@ -771,16 +785,12 @@ body::after {
   margin-bottom: 12px;
 }
 
-
+/* Исправить радиокнопки*/
 .radio div {
   display: flex;
   flex-direction: row;
   align-items: center;
   position: relative;
-}
-
-.radio input {
-
 }
 
 .radio label {
@@ -808,17 +818,12 @@ body::after {
   background-image: url("../svg/form-circle.svg");
 }
 
-/*.popup__radio_default {
+.popup__radio_default {
   position: absolute;
-  display: inline-block;
-  top: 0;
-  left: 0;
-  /*clip: rect(1px, 1px, 1px, 1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px; 
   width: 1px; 
-  cursor: pointer;
-  z-index: 100;
-}*/
+}
 
 .popup__group textarea {
   min-width: 100%;
@@ -851,13 +856,7 @@ body::after {
 }
 
 /*
-.select {
-  background-image: url("../svg/form-arrows.svg");
-  background-repeat: no-repeat;
-  background-position: right 20px center;
-  background-size: 10px;
-  
-}
+
 
 .select:focus {
   border-bottom: #b59f5b 1px solid;
