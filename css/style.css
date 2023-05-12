@@ -414,12 +414,12 @@ time {
   cursor: pointer;
 }
 
-.aside__search button:hover, .aside__mailing button:hover, .shop__button:hover {
+.aside__search button:hover, .aside__mailing button:hover, .shop__button:hover, .popup__form button:hover {
   box-shadow: 2px 3px 4px #999999;
   transition: box-shadow 0.3s ease-out;
 }
 
-.aside__search button:active, .aside__mailing button:active, .shop__button:active {
+.aside__search button:active, .aside__mailing button:active, .shop__button:active, .popup__form button:active {
   background-color: #8a763b;
   transition: background-color 0.1s ease-in;
 }
@@ -701,15 +701,16 @@ time {
 
 /* Поп-ап */
 
-/*body::after {
+body::after {
   content: "";
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #000000;
-  opacity: 0.6;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  visibility: hidden;
   z-index: 2;
 }
 
@@ -724,6 +725,14 @@ time {
   padding: 50px 30px;
   top: calc((100% - 590px)/2);
   left: calc((100% - 390px)/2);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease-in;
 }
 
 .popup__close {
@@ -825,6 +834,7 @@ time {
 
 .popup__radio_default:checked + label > .popup__radio_custom::before {
   background-image: url("../svg/form-circle.svg");
+  transition: all 0.3s ease-in;
 }
 
 .popup__radio_default {
