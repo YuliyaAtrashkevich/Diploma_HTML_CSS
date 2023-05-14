@@ -7,24 +7,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Yuliya Atrashkevich">
   <link rel="stylesheet" href="./css/style.css">
+  <script defer src="js/jquery-3.7.0.slim.js"></script><!--Подключение JQuery-->
+  <script src="js/popup.js"></script><!--Поп-ап-->
+  <script src="js/burger.js"></script><!--Меню-бургер-->
 </head>
 
 <body>
   <header>
     <div class="header__menu">
       <div class="header__logo">
-        <a href="#popup"><img src="./svg/noemi-logo.svg" alt="Логотип" ;></a>
+        <a href="#popup" class="popup-link"><img src="./svg/noemi-logo.svg" alt="Логотип" ;></a>
       </div>
       <nav class="header__nav">
-        <ul>
-          <li><a href="#0">Главная</a></li>
-          <li><a href="#0">Посты</a></li>
-          <li><a href="#0">Статьи</a></li>
-          <li><a href="#0">Теги</a></li>
-          <li><a href="#0">Темы</a></li>
-          <li><a href="#0">Контакты</a></li>
-        </ul>
-        <span></span>
+          <ul>
+            <li><a href="#0">Главная</a></li>
+            <li><a href="#0">Посты</a></li>
+            <li><a href="#0">Статьи</a></li>
+            <li><a href="#0">Теги</a></li>
+            <li><a href="#0">Темы</a></li>
+            <li><a href="#0">Контакты</a></li>
+          </ul>
+          <span></span>
       </nav>
     </div>
     <div class="header__title">
@@ -342,10 +345,11 @@
   <!--Поп-ап-->
 
   <div class="popup" id="popup">
-    <button class="popup__close" type="button"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+    <div class="popup__container">
+      <button class="popup__close" type="button"><a href="##" class="popup-close"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
         viewBox="0 0 441 441">
         <path fill="#fff" stroke="#000"
-          d="M220.336 170.564l.353.353.354-.353L390.288 1.318l49.796 49.773-169.269 169.245-.353.354.353.354 169.269 169.245-49.796 49.796-169.245-169.269-.354-.353-.353.353-169.27 169.269-49.748-49.796 169.245-169.245.353-.354-.353-.354L1.318 51.067 51.09 1.318l169.246 169.246z" />
+          d="M220.336 170.564l.353.353.354-.353L390.288 1.318l49.796 49.773-169.269 169.245-.353.354.353.354 169.269 169.245-49.796 49.796-169.245-169.269-.354-.353-.353.353-169.27 169.269-49.748-49.796 169.245-169.245.353-.354-.353-.354L1.318 51.067 51.09 1.318l169.246 169.246z" /></a>
       </svg></button>
     <form class="popup__form">
       <h2>Ваш фидбек</h2>
@@ -374,8 +378,8 @@
       </div>
       <button type="button">Отправить</button>
     </form> 
+    </div>
   </div>
-
 </body>
 
 </html>

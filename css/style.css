@@ -701,8 +701,7 @@ time {
 
 /* Поп-ап */
 
-body::after {
-  content: "";
+.popup {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -714,7 +713,7 @@ body::after {
   z-index: 2;
 }
 
-.popup {
+.popup__container {
   position: fixed;
   z-index: 99;
   width: 390px;
@@ -725,14 +724,12 @@ body::after {
   padding: 50px 30px;
   top: calc((100% - 590px)/2);
   left: calc((100% - 390px)/2);
-  opacity: 0;
-  visibility: hidden;
 }
 
 .popup:target {
   opacity: 1;
   visibility: visible;
-  transition: all 0.3s ease-in;
+  transition: all 0.8s ease-in;
 }
 
 .popup__close {
@@ -931,7 +928,7 @@ body::after {
   /* NB! Урок на Ютубе по бургеру */
 
   .header__nav ul {
-    display: none;
+    opacity: 0;
   }
 
   .header__menu {
@@ -947,7 +944,7 @@ body::after {
     position: absolute;
     top: 12px;
     right: 0;
-    z-index: 1;
+    z-index: 2;
   }
 
   .header__nav::before {
@@ -956,9 +953,9 @@ body::after {
     height: 3px;
     background-color: #ffffff;
     position: absolute;
-    top: 3px;
+    top: 2px;
     right: 0;
-    z-index: 1;
+    z-index: 2;
   }
 
   .header__nav::after {
@@ -967,9 +964,9 @@ body::after {
     height: 3px;
     background-color: #ffffff;
     position: absolute;
-    top: 21px;
+    top: 22px;
     right: 0;
-    z-index: 1;
+    z-index: 2;
   }
 
   header {
@@ -1176,6 +1173,7 @@ body::after {
   .footer__icons li:nth-child(n+2) {
     margin-left: 25px;
   }
+  
 }
 
 /* Планшеты - корректировка отступов */
@@ -1416,7 +1414,38 @@ body::after {
     margin: 45px 0 45px 0;
   }
 
-  /*Поп-ап*/
+  /* Поп-ап */
 
+.popup__container {
+  max-width: 92vw;
+  min-height: 50%;
+  max-height: 100vh;
+  padding: 20px 20px;
+  top: 40px;
+  left: 14px;
+}
+
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.8s ease-in;
+}
+
+.popup__group {
+  margin-bottom: 10px;
+}
+
+.popup__group textarea {
+  min-height: 40px;
+  max-height: 10vh;
+}
+
+.popup h2::after {
+  margin-bottom: 0px;
+}
+
+.popup__form button {
+  margin-bottom: 0;
+}
 
 }
